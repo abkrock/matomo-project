@@ -8,7 +8,7 @@ from openpyxl import load_workbook
 from openpyxl.drawing.image import Image
 
 # --- Step 1: Download CSV from Matomo ---
-url = "http://192.168.29.191:8080/index.php"
+url = "http://127.0.0.1:8080/index.php"
 params = {
     "module": "API",
     "method": "Actions.getPageUrls",
@@ -16,7 +16,7 @@ params = {
     "period": "day",
     "date": "today",
     "format": "CSV",
-    "token_auth": "a8f851e63acc4fae2e5824d517b8cca5"
+    "token_auth": "XXXXXXXXXXXXXXXXXXXXXXX"
 }
 
 response = requests.post(url, data=params)
